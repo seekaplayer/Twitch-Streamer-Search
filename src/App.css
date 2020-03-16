@@ -1,0 +1,30 @@
+.navbar {
+  padding: 1.5rem 1rem;
+}
+.bg-twitch {
+  background: #9146ff;
+}
+.bg-twitch .navbar-brand {
+  color: #f0f0ff;
+}
+.bg-twitch .navbar-brand:hover {
+  color: #f0f0ff;
+}
+.btn-twitch {
+  background: #9146ff;
+  color: #f0f0ff;
+}
+.btn-twitch:hover {
+  background: #7313ff;
+}
+.alert-twitch {
+  background: #9146ff;
+  color: #f0f0ff;
+}
+.searchInput {
+  padding: 1rem 0.75rem;
+}
+.profile_image {
+  max-height: 175px;
+  border: 4px solid #9146ff;
+}
