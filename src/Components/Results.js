@@ -26,9 +26,9 @@ const Results = ({ dataRender, toggleRender }) => {
           <div className="card">
             <div className="card-body">
               <div className="row">
-                <div className="col-md-3 col-sm-4 col-12">
+                <div className="col-md-3 col-sm-4 col-12 d-flex align-items-center">
                   <img
-                    className="img-fluid rounded-circle profile_image mx-auto d-block"
+                    className="img-fluid rounded-circle profile_image mx-auto"
                     src={dataRender && dataRender.data[0].profile_image_url}
                   />
                 </div>
