@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./Components/Templates/Header";
 import Form from "./Components/Form";
-import getTwitchUser from "./Components/API";
+import { getTwitchUser, getTwitchStream } from "./Components/API";
 import Results from "./Components/Results";
 import Footer from "./Components/Templates/Footer";
 import { render } from "react-dom";
@@ -9,6 +9,7 @@ import { render } from "react-dom";
 function App() {
   const [user, setUser] = useState("");
   const [userData, setUserData] = useState(null);
+  const [streamData, setStreamData] = useState(null);
   const [error, setError] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
   const [renderResults, setRenderResults] = useState(false);
@@ -26,6 +27,7 @@ function App() {
     } else {
       setError(false);
       const userDataReturn = await getTwitchUser(user);
+      const streamDataReturn = await getTwitchStream(user);
       if (userDataReturn.data[0] === undefined) {
         setError(true);
         setErrorMsg("There was no user by that name!");
@@ -34,6 +36,7 @@ function App() {
         setError(false);
         setRenderResults(true);
         setUserData(userDataReturn);
+        setStreamData(streamDataReturn);
       }
     }
   };
@@ -43,6 +46,7 @@ function App() {
       setRenderResults(false);
       setUser("");
       setUserData("");
+      setStreamData(null);
     }
   };
 
@@ -59,7 +63,11 @@ function App() {
             submitUser={submitUser}
           />
         ) : (
-          <Results toggleRender={toggleRender} dataRender={userData} />
+          <Results
+            toggleRender={toggleRender}
+            streamData={streamData}
+            dataRender={userData}
+          />
         )}
         <Footer />
       </div>
