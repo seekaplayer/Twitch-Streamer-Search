@@ -32,7 +32,15 @@
   max-width: 35px;
   padding-left: 0.5rem;
 }
-iframe {
+.twitchPlayer {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.twitchPlayer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-height: 720px;
+  height: 100%;
 }
