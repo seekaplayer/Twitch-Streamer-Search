@@ -28,16 +28,3 @@ export const getTwitchStream = async (user, first = 1) => {
   const streamData = await returnedResponse.json();
   return streamData;
 };
-
-export const getChannelData = async userID => {
-  const param1 = "channels";
-  const param2 = userID;
-  const returnedResponse = await fetch(`${api}/${param1}/${param2}`, {
-    headers: {
-      "Client-ID": clientID
-    }
-  });
-  const channelData = await returnedResponse.json();
-  console.log(channelData);
-  return channelData;
-};

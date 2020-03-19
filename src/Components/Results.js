@@ -1,14 +1,8 @@
 import React from "react";
 import Button from "./Button";
 import TwitchPlayer from "./TwitchPlayer";
-import TwitchStats from "./TwitchStats";
 
-const Results = ({
-  dataRender,
-  streamData,
-  channelDataRender,
-  toggleRender
-}) => {
+const Results = ({ dataRender, streamData, toggleRender }) => {
   return (
     <>
       <div className="row">
