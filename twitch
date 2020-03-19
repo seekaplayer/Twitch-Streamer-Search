@@ -9,3 +9,22 @@ description: "Welcome to my channel, My name is Seekaplayer and I'm a Gamer, Web
 profile_image_url: "https://static-cdn.jtvnw.net/jtv_user_pictures/ac7727af-28c3-4326-a19e-be6ca5347d2e-profile_image-300x300.png"
 offline_image_url: "https://static-cdn.jtvnw.net/jtv_user_pictures/2ab676f8-cd70-4442-bed5-1ce120096b68-channel_offline_image-1920x1080.jpeg"
 view_count: 44746
+
+
+id: "37171886512"
+user_id: "25843626"
+user_name: "Seekaplayer"
+game_id: "509670"
+type: "live"
+title: "Building Twitch App | Learning React/Node"
+viewer_count: 25
+started_at: "2020-03-17T07:00:39Z"
+language: "en"
+thumbnail_url: "https://static-cdn.jtvnw.net/previews-ttv/live_user_seekaplayer-{width}x{height}.jpg"
+tag_ids: ["6ea6bca4-4712-4ab9-a906-e3336a9d8039", "c23ce252-cf78-4b98-8c11-8769801aaf3a",…]
+0: "6ea6bca4-4712-4ab9-a906-e3336a9d8039"
+1: "c23ce252-cf78-4b98-8c11-8769801aaf3a"
+2: "a59f1e4e-257b-4bd0-90c7-189c3efbf917"
+3: "6f86127d-6051-4a38-94bb-f7b475dde109"
+4: "cea7bc0c-75a5-4446-8743-6db031b71550"
+5: "dff0aca6-52fe-4cc4-a93a-194852b522f0"

@@ -1,8 +1,14 @@
 import React from "react";
 import Button from "./Button";
 import TwitchPlayer from "./TwitchPlayer";
+import TwitchStats from "./TwitchStats";
 
-const Results = ({ dataRender, streamData, toggleRender }) => {
+const Results = ({
+  dataRender,
+  streamData,
+  channelDataRender,
+  toggleRender
+}) => {
   return (
     <>
       <div className="row">
@@ -28,8 +34,6 @@ const Results = ({ dataRender, streamData, toggleRender }) => {
               src={dataRender && dataRender.data[0].offline_image_url}
             />
           )}
-
-          {console.log(streamData && streamData.data[0])}
         </div>
       </div>
       <div className="row mt-4">
